@@ -1,7 +1,7 @@
 body {
   height: 100%;
   width: 100%;
-  background-color: #343a40d9 !important; }
+  background-color: #343a40d9; }
 
 main {
   min-height: calc(100vh - 40px);
@@ -41,22 +41,28 @@ nav {
 
 .site-content {
   color: #fff;
-  background: url("../img/vape-smoke-background-1.jpg");
+  z-index: 1;
+  background: url("../img/smoke-background.png");
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed; }
+  background-attachment: fixed;
+  max-height: 75vh; }
 
 .site-title, .site-desc {
-  color: white;
+  color: black;
   font-family: "Aldrich"; }
 
 .site-title {
-  margin-top: 30%;
-  margin-bottom: 6%;
-  font-size: 50px; }
+  background: url("../img/elogo.jpg");
+  mix-blend-mode: multiply;
+  background-repeat: no-repeat;
+  width: 50vw;
+  height: 10vh;
+  margin-top: 20%;
+  margin-bottom: 4%; }
 
 .site-desc {
-  font-size: 14px;
+  font-size: 16px;
   padding-left: 15%; }
 
 .site-btn1 {
@@ -70,3 +76,25 @@ nav {
 .site-btn1, .site-btn2 {
   margin-top: 5%;
   margin-bottom: 40%; }
+
+.section-1 .heading-1 {
+  margin-top: 8%; }
+
+.section-1 .heading-2 {
+  margin-bottom: 5%;
+  font-size: 40px; }
+
+.section-1 .para-1 {
+  width: 60%;
+  margin-left: 20%;
+  margin-bottom: 5%; }
+
+.section-1 .card-text, .para-1 {
+  color: rgba(0, 0, 0, 0.59); }
+
+.section-1 {
+  margin-bottom: 8%; }
+
+.card {
+  margin-left: auto;
+  margin-right: auto; }

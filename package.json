@@ -1,0 +1,19 @@
+{
+  "name": "evaporation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o public/css/ --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mhouston4994/evaporationMockup.git"
+  },
+  "author": "Matthew Houston",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mhouston4994/evaporationMockup/issues"
+  },
+  "homepage": "https://github.com/mhouston4994/evaporationMockup#readme"
+}

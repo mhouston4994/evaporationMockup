@@ -1,0 +1,91 @@
+@mixin easeOut {
+    transition: all 0.5s ease-out;
+}
+body {
+    height: 100%;
+    width: 100%;
+    background-color: #343a40d9 !important;
+}
+main {
+    min-height: calc(100vh - 40px);
+    width: 100%;
+}
+//NAVBAR
+nav {
+    font-family: 'Aldrich', sans-serif;
+}
+.footer {
+    height: 50px;
+    text-align: center;
+    font-weight: 400;
+    padding-top: 10px;
+    background: #343a40;
+    color: #fff;
+}
+.menu-btn{
+    .btn-line {
+        width: 28px;
+        height: 3px;
+        margin: 5px 0 5px 0;
+        background: #fff;
+        @include easeOut;
+    }
+
+        &.close {
+            transform: rotate(180deg);
+
+            .btn-line {
+                // Line 1 - Rotate
+                &:nth-child(1) {
+                    transform: rotate(45deg) translate(5px, 5px);
+                }
+                //Line 2 - Hide
+                &:nth-child(2) {
+                    opacity: 0;
+                }
+                //Line 3 - Rotate
+                &:nth-child(3) {
+                    transform: rotate(-45deg) translate(7px, -6px);
+                }
+            }
+        }
+}
+.fa {
+    padding-right: 10px;
+    font-size: 1.5rem;
+    color: #fff;
+}
+//MAIN
+//CUSTOM JUMBOTRON
+.site-content {
+    color: #fff;
+    background: url('../img/vape-smoke-background-1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.site-title, .site-desc {
+    color: white;
+    font-family: "Aldrich";
+}
+.site-title {
+    margin-top: 30%;
+    margin-bottom: 6%;
+    font-size: 50px;
+}
+.site-desc {
+    font-size: 14px;
+    padding-left: 15%;
+}
+.site-btn1 {
+    margin-left: 20%;
+    background-color: black;
+    color: white;
+}
+.site-btn2 {
+    background-color: white;
+}
+.site-btn1, .site-btn2 {
+    margin-top: 5%;
+    margin-bottom: 40%;
+}
